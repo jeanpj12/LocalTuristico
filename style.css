@@ -1,0 +1,155 @@
+:root{
+  --bg-default: #F5F4F0;
+  --border-primary: #D9D9D9;
+  --text-primary: #1B1B1B;
+  --text-secondary: #333333;
+  --text-tertiary: #696969;
+  --text-headline: #E1624F;
+  --accent-blue: #0C51A7;
+  --accent-orange: #E95E10;
+  --accent-pink: #E5245E;
+  --accent-purple: #591B98;
+}
+
+* {
+  font-family: "Open Sans";
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 6.5rem;
+  background-color: var(--bg-default);
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h1, h2, h3 {
+  color: var(--text-primary)
+}
+
+.headline, p, .subtitle {
+  font-size: 1.6rem;
+  color: var(--text-secondary)
+}
+
+.headline {
+  font-weight: bold;
+  color: var(--text-headline)
+}
+
+.subtitle {
+  font-style: italic;
+}
+
+main, footer {
+  margin: auto;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.divisor {
+  background-color: var(--text-tertiary);
+  height: .1rem;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 2.8rem;
+}
+
+.titlePage, .titleList {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.description, .contentList, .cardTravel, .titleList, .list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.cardTravel, .titleList {
+  gap: 2rem;
+}
+
+.list {
+  gap: 6.4rem;
+}
+
+.image {
+  border-radius: 2.4rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cardTravel > .image {
+  height: 350px;
+}
+
+.description > .image {
+  height: 660px;
+}
+
+#image01 {
+  background-image: url(./src/image/Image_01.png);
+}
+
+#image02 {
+  background-image: url(./src/image/Image_02.png);
+}
+
+#image03 {
+  background-image: url(./src/image/Image_03.png);
+}
+
+#image04 {
+  background-image: url(./src/image/Image_04.png);
+}
+
+.subtitle, footer {
+  text-align: center;
+}
+
+p + p {
+  margin-top: 2.4rem;
+  font-weight: bold;
+  color: var(--text-tertiary);
+}
+
+ul {
+  padding-left: 2.4rem;
+}
+
+.history {
+  font-weight: bold;
+  color: var(--accent-blue);
+}
+
+.family {
+  font-weight: bold;
+  color: var(--accent-pink);
+}
+
+.budget {
+  font-weight: bold;
+  color: var(--accent-orange);
+}
